@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiFunko</title>
+	<link rel="stylesheet" href="styles.css" />
+    <script type="text/JavaScript" src="script.js" defer></script>
+</head>
+<body>
+	<!-- Mi kit de iconos en kit.fontawesome.com  -->
+    <script src="https://kit.fontawesome.com/7e53be300f.js" crossorigin="anonymous"></script>  
+	
+	<header>
+		<div class="container-header">
+			<div class="container header">
+				<div class="customer-support">
+					<i class="fa-solid fa-headset"></i>
+					<div class="content-customer-support">
+						<span class="txt">Atención al cliente</span>
+						<span class="tlf">954 99 15 58</span>
+					</div>
+				</div>
+
+				<div class="container-loguito">
+					<i class="fa-solid fa-wand-sparkles"></i>
+					<h1 class="loguito"><a href="#">MiFunk-oh!</a></h1>
+				</div>
+
+				<div class="container-user">
+					<i class="fa-solid fa-user"></i>
+					<i class="fa-solid fa-basket-shopping"></i>
+					<div class="content-shopping">
+						<span class="txt">Carrito</span>
+						<span class="cant">(0)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Nav Bar -->
+
+		<div class="container-navbar">
+			<nav class="navbar container">
+				<i class="fa-solid fa-bars"></i>
+				<ul class="menu">
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Ofertas</a></li>
+					<li><a href="#">Películas</a></li>
+					<li><a href="#">Animación</a></li>
+					<li><a href="#">Juegos</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+
+				<form class="search-container">
+					<input type="search" placeholder="Buscar..." />
+					<button class="btn-search" aria-label="Buscar">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+				</form>
+			</nav>
+		</div>
+	</header>
+
+<!-- Slider -->
+
+		<div class="slider-container">
+			<div class="slider">
+				<div class="slide">
+						<div class="content-carousel">
+							<p>¡Corre, qué vuelan!</p>
+							<h2>Liquidación navideña <br> ¡Todo al 50%!</h2>
+							<div class="button"> Comprar ahora </div>
+						</div>
+				</div>
+				<div class="slide">
+					<div class="content-carousel">
+						<p>Recién llegados</p>
+						<h2>Descubre nuestras <br> últimas novedades</h2>
+						<div class="button"> ¡Vamos a explorar! </div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="content-carousel">
+						<p>Los clásicos</p>
+						<h2>Porque estos <br> nunca pasan de moda</h2>
+						<div class="button"> ¡Esto no me lo pierdo! </div>
+					</div>
+				</div>
+			</div>
+			<button class="prev" onclick="prevSlide()">&#10094;</button>
+			<button class="next" onclick="nextSlide()">&#10095;</button>
+		</div>
+
+<!-- Info -->
+
+	<main class="main-content">
+		<section class="container container-features">
+			<div class="card-feature">
+				<i class="fa-solid fa-plane-up"></i>
+				<div class="feature-content">
+					<span>Envíos gratuítos</span>
+					<p>En pedidos superiores a 50€</p>
+				</div>
+			</div>
+			<div class="card-feature">
+				<i class="fa-solid fa-wallet"></i>
+				<div class="feature-content">
+					<span>¿No te convence?</span>
+					<p>100% garantía de devolución</p>
+				</div>
+			</div>
+			<div class="card-feature">
+				<i class="fa-solid fa-gift"></i>
+				<div class="feature-content">
+					<span>Tarjetas Regalo</span>
+					<p>Regala MiFunk-oh, regala felicidad</p>
+				</div>
+			</div>
+			<div class="card-feature">
+				<i class="fa-solid fa-headset"></i>
+				<div class="feature-content">
+					<span>Atención al cliente L-V</span>
+					<p>¡Llámanos! 954 99 15 58</p>
+				</div>
+			</div>
+		</section>
+
+<!-- Categorías -->
+
+		<section class="container categories">
+			<h1 class="heading-one">Categorías</h1>
+				<div class="container-categories">
+					<div class="card-category category-movies">
+						<p>Películas</p>
+						<span>Ver más</span>
+					</div>
+					<div class="card-category category-games">
+						<p>Juegos</p>
+						<span>Ver más</span>
+					</div>
+					<div class="card-category category-animation">
+						<p>Animación</p>
+						<span>Ver más</span>
+					</div>
+				</div>
+		</section>
+
+<!-- El top del top -->
+
+		<section class="container top-products">
+			<h1 class="heading-one">El top del top</h1>
+			
+			<div class="container-options">
+				<span class="active">Rebajas</span>
+				<span>Novedades</span>
+				<span>Más Vendidos</span>
+			</div>
+
+			<div class="featured-products">
+				<!-- Funko 1 -->
+				<div class="card-product">
+					<div class="container-img">
+						<img src="/imagenes/top1.webp" alt="Funko 1" loading="lazy"/>
+						<span class="discount">-23%</span>
+						<div class="button-group">
+							<span>
+								<i class="fa-regular fa-eye"></i>
+							</span>
+							<span>
+								<i class="fa-regular fa-heart"></i>
+							</span>
+							<span>
+								<i class="fa-solid fa-code-compare"></i>
+							</span>
+						</div>
+					</div>
+					<div class="content-card-product">
+						<div class="stars">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<h3>Jack Sparrow</h3>
+						<span class="add-cart">
+							<i class="fa-solid fa-basket-shopping"></i>
+						</span>
+						<p class="price">9,99€ <span>12,99€</span></p>
+					</div>
+				</div>
+				<!-- Funko 2 -->
+				<div class="card-product">
+					<div class="container-img">
+						<img src="/imagenes/top2.webp" alt="Funko-2" loading="lazy"/>
+						<span class="discount">-47%</span>
+						<div class="button-group">
+							<span>
+								<i class="fa-regular fa-eye"></i>
+							</span>
+							<span>
+								<i class="fa-regular fa-heart"></i>
+							</span>
+							<span>
+								<i class="fa-solid fa-code-compare"></i>
+							</span>
+						</div>
+					</div>
+					<div class="content-card-product">
+						<div class="stars">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<h3>Glinda Wicked</h3>
+						<span class="add-cart">
+							<i class="fa-solid fa-basket-shopping"></i>
+						</span>
+						<p class="price">7,99€ <span>14,99€</span></p>
+					</div>
+				</div>
+				<!-- Funko 3 -->
+				<div class="card-product">
+					<div class="container-img">
+						<img src="/imagenes/top3.webp" alt="Funko-3" loading="lazy"/>
+						<span class="discount">-21%</span>
+						<div class="button-group">
+							<span>
+								<i class="fa-regular fa-eye"></i>
+							</span>
+							<span>
+								<i class="fa-regular fa-heart"></i>
+							</span>
+							<span>
+								<i class="fa-solid fa-code-compare"></i>
+							</span>
+						</div>
+					</div>
+					<div class="content-card-product">
+						<div class="stars">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<h3>Goku Dragon Ball</h3>
+						<span class="add-cart">
+							<i class="fa-solid fa-basket-shopping"></i>
+						</span>
+						<p class="price">7,99€ <span>9,99€</span></p>
+					</div>
+				</div>
+				<!-- Funko 4 -->
+				<div class="card-product">
+					<div class="container-img">
+						<img src="/imagenes/top4.webp" alt="Funko 4" loading="lazy"/>
+						<span class="discount">-33%</span>
+						<div class="button-group">
+							<span>
+								<i class="fa-regular fa-eye"></i>
+							</span>
+							<span>
+								<i class="fa-regular fa-heart"></i>
+							</span>
+							<span>
+								<i class="fa-solid fa-code-compare"></i>
+							</span>
+						</div>
+					</div>
+					<div class="content-card-product">
+						<div class="stars">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<h3>Deadpool</h3>
+						<span class="add-cart">
+							<i class="fa-solid fa-basket-shopping"></i>
+						</span>
+						<p class="price">9,99€ <span>14,99€</span></p>
+					</div>
+				</div>
+			</div>
+
+<!-- Ver imagen botón eye (YouTube tutorial) --> 
+
+			<div id="product-image-modal" class="modal">
+				<div class="modal-content">
+					<span id="close-modal" class="close">&times;</span>
+					<img id="modal-image" src="eye" alt="Producto">
+				</div>
+			</div>
+
+<!-- Mensaje de compra -->
+
+			<div id="message-overlay" class="message-overlay">
+				<div class="message-card">
+					<p id="message-text"></p>
+					<button id="accept-btn">¡Listo!</button>
+				</div>
+			</div>
+		</section>
+
+<!-- Galería de imágenes -->
+
+			<div class="gallery-content">
+				<div class="mosaic">
+					<img src="/imagenes/1.webp" class= "ImagenUno" alt="funko1" loading="lazy">
+					<img src="/imagenes/2.webp" class= "ImagenDos" alt="funko2" loading="lazy">
+					<img src="/imagenes/3.webp" class= "ImagenTres" alt="funko3" loading="lazy">
+					<img src="/imagenes/4.webp" class= "ImagenCuatro" alt="funko4" loading="lazy">
+					<img src="/imagenes/5.webp" class= "ImagenCinco" alt="funko5" loading="lazy">
+					<img src="/imagenes/6.webp" class= "ImagenSeis" alt="funko6" loading="lazy">
+					<img src="/imagenes/7.webp" class= "ImagenSiete" alt="funko7" loading="lazy">
+					<img src="/imagenes/8.webp" class= "ImagenOcho" alt="funko8" loading="lazy">
+					<img src="/imagenes/9.webp" class= "ImagenNueve" alt="funko9" loading="lazy">
+					<img src="/imagenes/10.webp" class= "ImagenDiez" alt="funko10" loading="lazy">
+					<img src="/imagenes/11.webp" class= "ImagenOnce" alt="funko11" loading="lazy">
+					<img src="/imagenes/12.webp" class= "ImagenDoce" alt="funko12" loading="lazy">
+					<img src="/imagenes/13.webp" class= "ImagenTrece" alt="funko13" loading="lazy">
+				</div>
+			</div>
+
+<!-- Rincón del coleccionista -->
+
+		<section class="container specials">
+			<h1 class="heading-one">Rincón del coleccionista</h1>
+			<div class="featured-products">
+				<!-- Funko 1 -->
+				<div class="card-product">
+					<div class="container-img">
+						<img src="/imagenes/top5.webp" alt="My Hero Academia" loading="lazy" />
+						<div class="button-group">
+							<span>
+								<i class="fa-regular fa-eye"></i>
+							</span>
+							<span>
+								<i class="fa-regular fa-heart"></i>
+							</span>
+							<span>
+								<i class="fa-solid fa-code-compare"></i>
+							</span>
+						</div>
+					</div>
+					<div class="content-card-product">
+						<div class="stars">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<h3>My Hero Academia</h3>
+						<span class="add-cart">
+							<i class="fa-solid fa-basket-shopping"></i>
+						</span>
+						<p class="price">49,99€
+					</div>
+				</div>
+				<!-- Funko 2 -->
+				<div class="card-product">
+					<div class="container-img">
+						<img src="/imagenes/top6.webp" alt="La Sirenita" loading="lazy"/>
+						<div class="button-group">
+							<span>
+								<i class="fa-regular fa-eye"></i>
+							</span>
+							<span>
+								<i class="fa-regular fa-heart"></i>
+							</span>
+							<span>
+								<i class="fa-solid fa-code-compare"></i>
+							</span>
+						</div>
+					</div>
+					<div class="content-card-product">
+						<div class="stars">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<h3>La Sirenita</h3>
+						<span class="add-cart">
+							<i class="fa-solid fa-basket-shopping"></i>
+						</span>
+						<p class="price">69,99€
+					</div>
+				</div>
+				<!-- Funko 3 -->
+				<div class="card-product">
+					<div class="container-img">
+						<img src="/imagenes/top7.webp" alt="One Piece" loading="lazy"/>
+						<div class="button-group">
+							<span>
+								<i class="fa-regular fa-eye"></i>
+							</span>
+							<span>
+								<i class="fa-regular fa-heart"></i>
+							</span>
+							<span>
+								<i class="fa-solid fa-code-compare"></i>
+							</span>
+						</div>
+					</div>
+					<div class="content-card-product">
+						<div class="stars">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<h3>One Piece</h3>
+						<span class="add-cart">
+							<i class="fa-solid fa-basket-shopping"></i>
+						</span>
+						<p class="price">39,99€
+					</div>
+				</div>
+				<!-- Funko 4 -->
+				<div class="card-product">
+					<div class="container-img">
+						<img src="/imagenes/top8.webp" alt="Demon Slayer" loading="lazy" />
+						<div class="button-group">
+							<span>
+								<i class="fa-regular fa-eye"></i>
+							</span>
+							<span>
+								<i class="fa-regular fa-heart"></i>
+							</span>
+							<span>
+								<i class="fa-solid fa-code-compare"></i>
+							</span>
+						</div>
+					</div>
+					<div class="content-card-product">
+						<div class="stars">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<h3>Demon Slayer</h3>
+						<span class="add-cart">
+							<i class="fa-solid fa-basket-shopping"></i>
+						</span>
+						<p class="price">59,99€</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+<!-- Blogs -->
+
+		<section class="container blogs">
+			<h1 class="heading-one">El Friki Blog</h1>
+			<div class="container-blogs">
+				<div class="card-blog">
+					<div class="container-img">
+						<img src="/imagenes/blog2.webp" alt="Funkos" loading="lazy" />
+					</div>
+					<div class="content-blog">
+						<h3>Nuevos Funkos de Tus Cantantes Favoritos</h3>
+						<span>19 enero 2025</span>
+						<p>
+							¡Atención coleccionistas y melómanos! Han llegado a nuestra tienda 
+							los nuevos Funkos de edición especial de tus artistas favoritos. 
+							Desde leyendas del rock como Freddie Mercury hasta ídolos del pop 
+							como Taylor Swift, ahora puedes llevarte a casa a tus estrellas preferidas 
+							en versión miniatura. ¡Corre por el tuyo antes de que se agoten!
+						</p>
+						<div class="btn-read-more">Leer más</div>
+					</div>
+				</div>
+				<div class="card-blog">
+					<div class="container-img">
+						<img src="/imagenes/blog1.webp" alt="Recreativas" loading="lazy" />
+					</div>
+					<div class="content-blog">
+						<h3>Nueva Game Zone en Sevilla: Vuelve la magia de las recreativas</h3>
+						<span>3 enero 2025</span>
+						<p>
+							Los nostálgicos de los videojuegos están de enhorabuena: 
+							¡ha abierto una nueva Game Zone en Sevilla con máquinas recreativas 
+							clásicas de SEGA, Nintendo y más! Disfruta de arcade vintage, pinballs 
+							y experiencias retro que te harán viajar en el tiempo. 
+							¿Preparado para echar unas monedas y revivir la era dorada del gaming?
+						</p>
+						<div class="btn-read-more">Leer más</div>
+					</div>
+				</div>
+				<div class="card-blog">
+					<div class="container-img">
+						<img src="/imagenes/blog3.webp" alt="Pokemon" loading="lazy" />
+					</div>
+					<div class="content-blog">
+						<h3> Un Nuevo Pokémon al Estilo Game Boy Llega a PC</h3>
+						<span>26 enero 2025</span>
+						<p>
+							Pokémon regresa a sus raíces con un emocionante nuevo juego 
+							para PC que recrea la estética clásica de Game Boy y Game Boy Color. 
+							Con gráficos pixelados, interfaces vintage y mecánicas de juego que 
+							te recordarán a los primeros títulos de la saga. ¿Estás listo para 
+							revivir la magia de la vieja escuela en tu PC?
+						</p>
+						<div class="btn-read-more">Leer más</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<!-- Footer -->
+
+		<footer class="footer">
+			<div class="container container-footer">
+				<div class="menu-footer">
+					<div class="contact-info">
+						<p class="title-footer">Contacto</p>
+						<ul>
+							<li>C/ Conde de Cifuentes, Sevilla</li>
+							<li>Horario: 9:00 - 15:00 / 16:00 - 21:00 </li>
+							<li>Teléfono: 954 99 15 58 </li>
+							<li>Email: info@cei.es </li>
+						</ul>
+						<div class="social-icons">
+							<span class="facebook">
+								<i class="fa-brands fa-facebook-f"></i>
+							</span>
+							<span class="instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</span>
+							<span class="tiktok">
+								<i class="fa-brands fa-tiktok"></i>
+							</span>
+						</div>
+					</div>
+
+					<div class="information">
+						<p class="title-footer">Información</p>
+						<ul>
+							<li><a href="#">Sobre Nosotros</a></li>
+							<li><a href="#">Delivery</a></li>
+							<li><a href="#">Politicas de Privacidad</a></li>
+							<li><a href="#">Términos y condiciones</a></li>
+						</ul>
+					</div>
+
+					<div class="my-account">
+						<p class="title-footer">Mi cuenta</p>
+						<ul>
+							<li><a href="#">Mi cuenta</a></li>
+							<li><a href="#">Mis pedidos</a></li>
+							<li><a href="#">Lista de deseos</a></li>
+							<li><a href="#">Friki Blog</a></li>
+						</ul>
+					</div>
+
+					<div class="newsletter">
+						<p class="title-footer">Newsletter</p>
+						<div class="content">
+							<p>
+								Regístrate en nuestra newsletter y sé el primero en descubrir 
+								nuevas colecciones y ofertas exclusivas.
+							</p>
+							<input type="email" placeholder="Introduce tu email aquí...">
+							<button>Suscríbete</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="copyright">
+					<p> Desarrollado por EquisCe &copy; 2025 </p>
+				</div>
+			</div>
+		</footer>
+	</main>
+</body>
+</html>
