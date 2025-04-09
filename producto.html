@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiFunko</title>
+	<link rel="stylesheet" href="styles.css" />
+    <script type="text/JavaScript" src="script.js" defer></script>
+</head>
+<body>
+	<!-- Mi kit de iconos en kit.fontawesome.com  -->
+
+	<script src="https://kit.fontawesome.com/7e53be300f.js" crossorigin="anonymous"></script>  
+
+	<!-- Header  -->
+
+	<header>
+		<div class="container-header">
+			<div class="container header">
+				<div class="customer-support">
+					<i class="fa-solid fa-headset"></i>
+					<div class="content-customer-support">
+						<span class="txt">Atención al cliente</span>
+						<span class="tlf">954 99 15 58</span>
+					</div>
+				</div>
+
+				<div class="container-loguito">
+					<i class="fa-solid fa-wand-sparkles"></i>
+					<h1 class="loguito"><a href="index.html">MiFunk-oh!</a></h1>
+				</div>
+
+				<div class="container-user">
+					<i class="fa-solid fa-user"></i>
+					<i class="fa-solid fa-basket-shopping"></i>
+					<div class="content-shopping">
+						<span class="txt">Carrito</span>
+						<span class="cant">(0)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Nav Bar -->
+
+		<div class="container-navbar">
+			<nav class="navbar container">
+				<i class="fa-solid fa-bars"></i>
+				<ul class="menu">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="catalogo.html">Catálogo</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+
+				<form class="search-container">
+					<input type="search" placeholder="Buscar..." />
+					<button class="btn-search" aria-label="Buscar">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+				</form>
+			</nav>
+		</div>
+	</header>
+
+  	<!-- Producto -->
+
+  <main class="producto-container">
+    <section class="producto-detalle">
+      <div class="imagen-producto">
+        <img src="imagenes/top1.webp" alt="Funko Jack Sparrow">
+      </div>
+      <div class="info-producto">
+        <h1>Jack Sparrow</h1>
+        <div class="estrellas">
+          <i class="fa-solid fa-star" data-value="1"></i>
+          <i class="fa-solid fa-star" data-value="2"></i>
+          <i class="fa-solid fa-star" data-value="3"></i>
+          <i class="fa-solid fa-star" data-value="4"></i>
+          <i class="fa-regular fa-star" data-value="5"></i>
+        </div>
+        <span class="texto-valoracion"></span>
+        <p class="precio">9,99€ <span class="tachado">12,99€</span></p>
+        <p class="descripcion-corta">Edición especial del icónico capitán de Piratas del Caribe.</p>
+        <button class="btn-carrito">Añadir al carrito</button>
+      </div>
+    </section>
+
+    <!-- Pestañas Descripción / Opiniones / Detalles -->
+
+    <section class="tabs-producto">
+      <div class="tabs">
+        <button class="tab active" data-tab="desc">Descripción</button>
+        <button class="tab" data-tab="opiniones">Opiniones</button>
+        <button class="tab" data-tab="detalles">Detalles técnicos</button>
+      </div>
+      <div class="tab-content active" id="desc">
+        <p>Este Funko Pop! captura el espíritu irreverente y aventurero del capitán Jack Sparrow con detalles únicos como su brújula, sombrero y pose característica. </p>
+      </div>
+      <div class="tab-content" id="opiniones">
+        <p>⭐️⭐️⭐️⭐️ – "Es perfecto, el detalle del sombrero es brutal."</p>
+        <p>⭐️⭐️⭐️⭐️⭐️ – "Ideal para fans de la saga, llegó rápido y bien embalado."</p>
+      </div>
+      <div class="tab-content" id="detalles">
+        <ul>
+          <li>Altura: 9,5 cm</li>
+          <li>Material: Vinilo</li>
+          <li>Licencia oficial</li>
+          <li>Incluye base transparente</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Productos relacionados -->
+
+    <section class="productos-relacionados">
+      <h2>También te puede gustar...</h2>
+      <div class="grid-relacionados">
+        <div class="producto-card">
+          <img src="imagenes/top2.webp" alt="Glinda">
+          <h3>Glinda Wicked</h3>
+          <p class="precio">7,99€</p>
+          <a href="producto.html" class="btn-detalles">Ver detalles</a>
+        </div>
+        <div class="producto-card">
+          <img src="imagenes/top3.webp" alt="Goku">
+          <h3>Goku Dragon Ball</h3>
+          <p class="precio">7,99€</p>
+          <a href="producto.html" class="btn-detalles">Ver detalles</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal para imagen ampliada - buscado en Google -->
+
+  <div id="modal-img" class="modal-img">
+    <span class="cerrar-modal">&times;</span>
+    <img class="imagen-ampliada" src="" alt="Imagen ampliada del producto">
+  </div>
+
+  <!-- Mensaje de confirmación cuando añadimos al carrito -->
+
+<div class="mensaje-carrito" id="mensajeCarrito">
+  ¡Producto añadido con éxito! 🛒
+</div>
+
+
+  <!-- Footer -->
+
+	<footer class="footer">
+		<div class="container-footer">
+		<div class="footer-col footer-brand">
+			<h3>MiFunk-oh!</h3>
+			<p>Regístrate en nuestra newsletter y sé el primero en descubrir nuevas colecciones y ofertas exclusivas.</p>
+			<button class="btn-suscribirme">Suscribirme</button>
+			<div class="social-icons center-icons">
+			<a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+			<a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+			<a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+			</div>
+		</div>
+	
+		<div class="footer-col footer-links">
+			<div class="col">
+			<h4>Contacto</h4>
+			<ul>
+				<li>C/ Conde de Cifuentes, Sevilla</li>
+				<li>Horario: 9:00 - 15:00 / 16:00 - 21:00</li>
+				<li>Tel: 954 99 15 58</li>
+				<li>Email: info@cei.es</li>
+			</ul>
+			</div>
+	
+			<div class="col">
+			<h4>Información</h4>
+			<ul>
+				<li><a href="#">Sobre Nosotros</a></li>
+				<li><a href="#">Delivery</a></li>
+				<li><a href="#">Privacidad</a></li>
+				<li><a href="#">Términos</a></li>
+			</ul>
+			</div>
+		</div>
+		</div>
+	
+		<div class="copyright">
+		<p>Desarrollado por EquisCe &copy; 2025</p>
+		</div>
+	</footer>
+</body>
+</html>
+
