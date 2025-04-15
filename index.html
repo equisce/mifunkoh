@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiFunko</title>
+	<link rel="stylesheet" href="styles.css" />
+    <script type="text/JavaScript" src="script.js" defer></script>
+</head>
+<body>
+	<!-- Mi kit de iconos en kit.fontawesome.com  -->
+
+	<script src="https://kit.fontawesome.com/7e53be300f.js" crossorigin="anonymous"></script>  
+
+	<!-- Header  -->
+
+	<header>
+		<div class="container-header">
+			<div class="container header">
+				<div class="customer-support">
+					<i class="fa-solid fa-headset"></i>
+					<div class="content-customer-support">
+						<span class="txt">Atención al cliente</span>
+						<span class="tlf">954 99 15 58</span>
+					</div>
+				</div>
+
+				<div class="container-loguito">
+					<i class="fa-solid fa-wand-sparkles"></i>
+					<h1 class="loguito"><a href="index.html">MiFunk-oh!</a></h1>
+				</div>
+
+				<div class="container-user">
+					<i class="fa-solid fa-user"></i>
+					<i class="fa-solid fa-basket-shopping"></i>
+					<div class="content-shopping">
+						<span class="txt">Carrito</span>
+						<span class="cant">(0)</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Nav Bar -->
+
+		<div class="container-navbar">
+			<nav class="navbar container">
+				<i class="fa-solid fa-bars"></i>
+				<ul class="menu">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="catalogo.html">Catálogo</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+
+				<form class="search-container">
+					<input type="search" placeholder="Buscar..." />
+					<button class="btn-search" aria-label="Buscar">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</button>
+				</form>
+			</nav>
+		</div>
+	</header>
+
+<!-- Slider -->
+
+		<div class="slider-container">
+			<div class="slider">
+				<div class="slide">
+						<div class="content-carousel">
+							<p>¡Corre, qué vuelan!</p>
+							<h2>Liquidación de primavera <br> ¡Todo al 50%!</h2>
+							<div class="button"> Comprar ahora </div>
+						</div>
+				</div>
+				<div class="slide">
+					<div class="content-carousel">
+						<p>Recién llegados</p>
+						<h2>Descubre nuestras <br> últimas novedades</h2>
+						<div class="button"> ¡Vamos a explorar! </div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="content-carousel">
+						<p>Los clásicos</p>
+						<h2>Porque estos <br> nunca pasan de moda</h2>
+						<div class="button"> ¡Esto no me lo pierdo! </div>
+					</div>
+				</div>
+			</div>
+			<button class="prev" onclick="prevSlide()">&#10094;</button>
+			<button class="next" onclick="nextSlide()">&#10095;</button>
+		</div>
+
+<!-- El top del top -->
+
+	<section class="container top-products">
+		<h1 class="heading-one">¡El top del top!</h1>
+		
+		<div class="container-options">
+			<span class="active">Todos</span>
+			<span>Películas</span>
+			<span>Animación</span>
+			<span>Juegos</span>
+		</div>
+	
+		<div class="grid-productos-cuadricula">
+		<div class="producto-card">
+			<img src="imagenes/top1.webp" alt="Funko Jack Sparrow">
+			<h3>Jack Sparrow</h3>
+			<p class="precio">9,99€ <span class="tachado">12,99€</span></p>
+			<a href="producto.html" class="btn-detalles">Ver detalles</a>
+		</div>
+	
+		<div class="producto-card">
+			<img src="imagenes/top2.webp" alt="Funko Glinda Wicked">
+			<h3>Glinda Wicked</h3>
+			<p class="precio">7,99€ <span class="tachado">9,99€</span></p>
+			<div class="btn-detalles">Ver detalles</div>
+		</div>
+	
+		<div class="producto-card">
+			<img src="imagenes/top3.webp" alt="Funko Goku Dragon Ball">
+			<h3>Goku Dragon Ball</h3>
+			<p class="precio">14,99€</p>
+			<div class="btn-detalles">Ver detalles</div>
+		</div>
+	
+		<div class="producto-card">
+			<img src="imagenes/top4.webp" alt="Funko Deadpool">
+			<h3>Deadpool</h3>
+			<p class="precio">19,99€</p>
+			<div class="btn-detalles">Ver detalles</div>
+		</div>
+		</div>
+	</section>
+			
+<!-- Galería de imágenes -->
+
+	<div class="gallery-content">
+		<div class="mosaic">
+			<img src="imagenes/1.webp" class= "ImagenUno" alt="funko1" loading="lazy">
+			<img src="imagenes/2.webp" class= "ImagenDos" alt="funko2" loading="lazy">
+			<img src="imagenes/3.webp" class= "ImagenTres" alt="funko3" loading="lazy">
+			<img src="imagenes/4.webp" class= "ImagenCuatro" alt="funko4" loading="lazy">
+			<img src="imagenes/5.webp" class= "ImagenCinco" alt="funko5" loading="lazy">
+			<img src="imagenes/6.webp" class= "ImagenSeis" alt="funko6" loading="lazy">
+			<img src="imagenes/7.webp" class= "ImagenSiete" alt="funko7" loading="lazy">
+			<img src="imagenes/8.webp" class= "ImagenOcho" alt="funko8" loading="lazy">
+			<img src="imagenes/9.webp" class= "ImagenNueve" alt="funko9" loading="lazy">
+			<img src="imagenes/10.webp" class= "ImagenDiez" alt="funko10" loading="lazy">
+			<img src="imagenes/11.webp" class= "ImagenOnce" alt="funko11" loading="lazy">
+			<img src="imagenes/12.webp" class= "ImagenDoce" alt="funko12" loading="lazy">
+			<img src="imagenes/13.webp" class= "ImagenTrece" alt="funko13" loading="lazy">
+		</div>
+	</div>
+
+<!-- El rincón del coleccionista -->
+
+	<section class="container top-products">
+		<h1 class="heading-one">El rincón del coleccionista</h1>
+	
+		<div class="grid-productos-cuadricula">
+		<div class="producto-card">
+			<img src="imagenes/top5.webp" alt="Funko My Hero Academy">
+			<h3>My Hero Academy</h3>
+			<p class="precio">32,99€ <span class="tachado">39,99€</span></p>
+			<div class="btn-detalles">Ver detalles</div>
+		</div>
+	
+		<div class="producto-card">
+			<img src="imagenes/top6.webp" alt="Funko La Sirenita">
+			<h3>La Sirenita</h3>
+			<p class="precio">49,99€ <span class="tachado">59,99€</span></p>
+			<div class="btn-detalles">Ver detalles</div>
+		</div>
+	
+		<div class="producto-card">
+			<img src="imagenes/top7.webp" alt="Funko One Piece">
+			<h3>One Piece</h3>
+			<p class="precio">49,99€</p>
+			<div class="btn-detalles">Ver detalles</div>
+		</div>
+	
+		<div class="producto-card">
+			<img src="imagenes/top8.webp" alt="Funko Demon Slayer">
+			<h3>Demon Slayer</h3>
+			<p class="precio">109,99€</p>
+			<div class="btn-detalles">Ver detalles</div>
+		</div>
+		</div>
+	</section>
+			
+<!-- El Friki Blog -->
+
+	<section class="container blogs">
+		<h1 class="heading-one">El Friki Blog</h1>
+		<div class="container-blogs">
+			<div class="card-blog">
+				<div class="container-img">
+					<img src="imagenes/blog2.webp" alt="Funkos" loading="lazy" />
+				</div>
+				<div class="content-blog">
+					<h3>Nuevos Funkos de Tus Cantantes Favoritos</h3>
+					<span>19 marzo 2025</span>
+					<p>
+						¡Atención coleccionistas y melómanos! Han llegado a nuestra tienda 
+						los nuevos Funkos de edición especial de tus artistas favoritos. 
+						Desde leyendas del rock como Freddie Mercury hasta ídolos del pop 
+						como Taylor Swift, ahora puedes llevarte a casa a tus estrellas preferidas 
+						en versión miniatura. ¡Corre por el tuyo antes de que se agoten!
+					</p>
+					<a href="blog.html" class="btn-read-more">Leer más</a>
+				</div>
+			</div>
+			<div class="card-blog">
+				<div class="container-img">
+					<img src="imagenes/blog1.webp" alt="Recreativas" loading="lazy" />
+				</div>
+				<div class="content-blog">
+					<h3>Nueva Game Zone en Sevilla: Vuelve la magia de las recreativas</h3>
+					<span>3 marzo 2025</span>
+					<p>
+						Los nostálgicos de los videojuegos están de enhorabuena: 
+						¡ha abierto una nueva Game Zone en Sevilla con máquinas recreativas 
+						clásicas de SEGA, Nintendo y más! Disfruta de arcade vintage, pinballs 
+						y experiencias retro que te harán viajar en el tiempo. 
+						¿Preparado para echar unas monedas y revivir la era dorada del gaming?
+					</p>
+					<div class="btn-read-more">Leer más</div>
+				</div>
+			</div>
+			<div class="card-blog">
+				<div class="container-img">
+					<img src="imagenes/blog3.webp" alt="Pokemon" loading="lazy" />
+				</div>
+				<div class="content-blog">
+					<h3> Un Nuevo Pokémon al Estilo Game Boy Llega a PC</h3>
+					<span>26 febrero 2025</span>
+					<p>
+						Pokémon regresa a sus raíces con un emocionante nuevo juego 
+						para PC que recrea la estética clásica de Game Boy y Game Boy Color. 
+						Con gráficos pixelados, interfaces vintage y mecánicas de juego que 
+						te recordarán a los primeros títulos de la saga. ¿Estás listo para 
+						revivir la magia de la vieja escuela en tu PC?
+					</p>
+					<div class="btn-read-more">Leer más</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container-footer">
+		<div class="footer-col footer-brand">
+			<h3>MiFunk-oh!</h3>
+			<p>Regístrate en nuestra newsletter y sé el primero en descubrir nuevas colecciones y ofertas exclusivas.</p>
+			<button class="btn-suscribirme">Suscribirme</button>
+			<div class="social-icons center-icons">
+			<a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+			<a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+			<a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+			</div>
+		</div>
+	
+		<div class="footer-col footer-links">
+			<div class="col">
+			<h4>Contacto</h4>
+			<ul>
+				<li>C/ Conde de Cifuentes, Sevilla</li>
+				<li>Horario: 9:00 - 15:00 / 16:00 - 21:00</li>
+				<li>Tel: 954 99 15 58</li>
+				<li>Email: info@mifunkoh.com</li>
+			</ul>
+			</div>
+	
+			<div class="col">
+			<h4>Información</h4>
+			<ul>
+				<li><a href="#">Sobre Nosotros</a></li>
+				<li><a href="#">Delivery</a></li>
+				<li><a href="#">Privacidad</a></li>
+				<li><a href="#">Términos</a></li>
+			</ul>
+			</div>
+		</div>
+		</div>
+	
+		<div class="copyright">
+		<p>Desarrollado por EquisCe &copy; 2025</p>
+		</div>
+	</footer>
+</body>
+</html>
+  
