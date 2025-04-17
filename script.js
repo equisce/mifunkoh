@@ -1,6 +1,6 @@
 // Hamburguesa menú
 
-document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.querySelector('.navbar .fa-bars');
     const menu = document.querySelector('.menu');
   
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
-  // Slider intro
+// Slider intro
 
   let currentSlide = 0;
   function showSlide(index) {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     showSlide(currentSlide - 1);
   }
   
-  // Modal imagen ampliada producto
+// Modal imagen ampliada producto
 
   const imagenProducto = document.querySelector('.imagen-producto img');
   const modal = document.getElementById('modal-img');
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   
-  // Tabs en producto
+// Tabs en producto
 
   const tabs = document.querySelectorAll('.tab');
   const tabContents = document.querySelectorAll('.tab-content');
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
-  // Estrellas
+// Estrellas
 
   const estrellas = document.querySelectorAll('.estrellas i');
   const mensajeValoracion = document.querySelector('.texto-valoracion');
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
-  // Añadir al carrito y redirigir - Cómo redirigir: ChatGPT
+// Añadir al carrito y redirigir - Cómo redirigir: ChatGPT
 
   const botonCarrito = document.querySelector('.btn-carrito');
   const mensajeCarrito = document.getElementById('mensajeCarrito');
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
   
-  // Función general al cargar la página
+// Función general al cargar la página
 
   document.addEventListener('DOMContentLoaded', () => {
     const cantidadGuardada = localStorage.getItem('carritoCantidad');
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   
-    // Actualizar total en carrito.html
+  // Actualizar total en carrito.html
 
     const inputCantidad = document.querySelector('input[type="number"]');
     const celdaTotal = document.querySelector('td:nth-child(5)');
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function () {
       actualizarTotal();
     }
   
-    // Eliminar producto del carrito
+  // Eliminar producto del carrito
 
     if (btnEliminar) {
       btnEliminar.addEventListener('click', () => {
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   
-    // Si el carrito está vacío al cargar, limpiar contador
+  // Si el carrito está vacío al cargar, limpiar contador
 
     if (!filaProducto && contador) {
       localStorage.removeItem('carritoCantidad');
@@ -168,3 +168,26 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
   
+// Formulario de contacto
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('form-contacto');
+  const mensajeExito = document.getElementById('mensajeExito');
+
+  if (form) {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      // Muestra el mensaje
+      mensajeExito.style.display = 'block';
+
+      // Reseteamos el formulario
+      form.reset();
+
+      // Oculta el mensaje después de 4 segundos
+      setTimeout(() => {
+        mensajeExito.style.display = 'none';
+      }, 4000);
+    });
+  }
+});
